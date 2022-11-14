@@ -52,8 +52,6 @@ make
 ./host_main leonhard_2cores_267mhz.xclbin sw_kernel_main.rawbinary
 ```
 
-## Если 
-
 ## Работа программы по заданию
 
 ```bash
@@ -61,6 +59,14 @@ Input your IP: 195.19.32.1
 Got IP: 195.19.32.1
 Offset from the start IP: 0
 Your interface: 103 (CORRECT)
+```
+
+## Если программа работает некорректно
+
+Возможно, на вашей машине "зависли" другие процессы. Чтобы убить их, выполните команду:
+
+```bash
+xbutil reset
 ```
 
 ## Очистка проекта
