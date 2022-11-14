@@ -52,6 +52,8 @@ make
 ./host_main leonhard_2cores_267mhz.xclbin sw_kernel_main.rawbinary
 ```
 
+## Если 
+
 ## Работа программы по заданию
 
 ```bash
