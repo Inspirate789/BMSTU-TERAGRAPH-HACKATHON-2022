@@ -32,9 +32,12 @@ git clone --recursive https://github.com/Inspirate789/bmstu-teragraph-hackathon-
 
 ## Сборка проекта
 
-Следует выполнить команду:
+Следует выполнить команды:
 
 ```bash
+cd bmstu-teragraph-hackathon-2022/
+git checkout task_1
+cd task_1
 make
 ```
 
