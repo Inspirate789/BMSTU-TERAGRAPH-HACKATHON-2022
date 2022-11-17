@@ -35,9 +35,7 @@ git clone --recursive https://github.com/Inspirate789/bmstu-teragraph-hackathon-
 Следует выполнить команды:
 
 ```bash
-cd bmstu-teragraph-hackathon-2022/
-git checkout task_1
-cd task_1
+cd bmstu-teragraph-hackathon-2022/task_1
 make
 ```
 
