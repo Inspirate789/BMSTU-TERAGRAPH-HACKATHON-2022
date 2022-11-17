@@ -83,27 +83,10 @@ void insert_burst() {
 //-------------------------------------------------------------
  
 void search_burst() {
-
     //Ожидание завершения предыдущих команд
     lnh_sync(); 
     //Объявление переменных
     unsigned int count = lnh_get_num(TEST_STRUCTURE);
-    unsigned int size_in_bytes = 2*count*sizeof(uint64_t);
-    //Создание буфера для приема пакета
-    uint64_t *buffer = (uint64_t*)malloc(size_in_bytes);
-    //Выборка минимального ключа
-    lnh_get_first(TEST_STRUCTURE);
-
-    //Запись ключа и значения в буфер
-    for (int i=0; i<count; i++) {
-        buffer[2*i] = lnh_core.result.key;
-        buffer[2*i+1] = lnh_core.result.value;
-        lnh_next(TEST_STRUCTURE,lnh_core.result.key);
-    }
-
-    //Запись глобальной памяти из RAM
-    buf_write(size_in_bytes, (char*)buffer);   
-
     //Передать количество key-value
     mq_send(count);
     //Получить ключ
@@ -113,5 +96,4 @@ void search_burst() {
     //Отправка ответа
 	mq_send(lnh_core.result.value);
     // mq_send(buffer[2*1+1]);
-    free(buffer);
 }
