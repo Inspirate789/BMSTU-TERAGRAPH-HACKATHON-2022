@@ -43,7 +43,7 @@ make
 ## Запуск проекта (**Вариант 19**)
 Берём ваш файл, добавляем его в проект и послединим аргументом при запуске программы указываем путь к нему из корня проекта:
 ```
-./host/host_main leonhard_2cores_267mhz.xclbin ./sw_kernel/sw_kernel_main.rawbinary data/simulated_blockmodel_graph_500_nodes_snowball_10.tsv
+./host/host_main leonhard_2cores_267mhz.xclbin ./sw-kernel/sw_kernel.rawbinary data/simulated_blockmodel_graph_500_nodes_snowball_10.tsv
 ```
 
 Для выбора варианта раскладки графа необходимо указать в файле ./host/src/host_main.cpp один из вариантов:
