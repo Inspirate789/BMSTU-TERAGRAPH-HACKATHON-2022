@@ -1,0 +1,11 @@
+obj
+gpc_test
+*.dissasembled
+*.dump
+*.hw_init
+*.map
+*.rawbinary
+*.sim_init
+*.log
+stYOAHv2
+lib
