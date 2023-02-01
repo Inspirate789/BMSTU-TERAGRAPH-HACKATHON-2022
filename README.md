@@ -6,4 +6,4 @@
 
 #### Special thnx:
 - [@tatarinova0903](https://github.com/tatarinova0903)
-- TODO
+- [@awarebayes](https://github.com/awarebayes)
